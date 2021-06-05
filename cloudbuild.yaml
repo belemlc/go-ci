@@ -1,0 +1,10 @@
+steps:
+
+  - id: "Rodando test go"
+    name: golang
+    entrypoint: /bin/bash
+    args:
+      - -c
+      - |
+        go get -u github.com/rakyll/gotest
+        go test -v main_test.go main.go
